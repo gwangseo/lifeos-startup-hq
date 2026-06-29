@@ -1,2 +1,1 @@
-notion_page_id,notion_url,created_time,last_edited_time,archived,in_trash
-
+notion_page_id,notion_url,created_time,last_edited_time,archived,in_trash,Result Summary,GitHub Path,Status,Review Required,Expected Output,GitHub Branch,Priority,Context,Files to Create/Update,Instruction,Area,Task ID,Task
