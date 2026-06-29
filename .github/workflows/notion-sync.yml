@@ -1,0 +1,42 @@
+name: Notion Sync
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Sync Notion data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Export Notion data sources
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
+          NOTION_CONVERSATION_DATA_SOURCE_ID: ${{ secrets.NOTION_CONVERSATION_DATA_SOURCE_ID }}
+          NOTION_DECISION_DATA_SOURCE_ID: ${{ secrets.NOTION_DECISION_DATA_SOURCE_ID }}
+          NOTION_CODEX_TASK_DATA_SOURCE_ID: ${{ secrets.NOTION_CODEX_TASK_DATA_SOURCE_ID }}
+          NOTION_RESEARCH_DATA_SOURCE_ID: ${{ secrets.NOTION_RESEARCH_DATA_SOURCE_ID }}
+          NOTION_COMPETITOR_DATA_SOURCE_ID: ${{ secrets.NOTION_COMPETITOR_DATA_SOURCE_ID }}
+          NOTION_SYNC_LOG_DATA_SOURCE_ID: ${{ secrets.NOTION_SYNC_LOG_DATA_SOURCE_ID }}
+        run: python scripts/notion_sync/sync_notion_to_csv.py
+
+      - name: Commit synced data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): sync Notion exports"
+          file_pattern: data/*.csv
+

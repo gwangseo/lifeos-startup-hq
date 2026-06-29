@@ -1,0 +1,44 @@
+openapi: 3.1.0
+info:
+  title: LifeOS Startup HQ GPT Actions
+  version: 0.1.0
+  description: Placeholder API contract for future GPT-to-Notion capture.
+servers:
+  - url: https://example.com
+    description: Replace with the deployed Vercel or API service URL.
+paths:
+  /conversation-summaries:
+    post:
+      operationId: saveConversationSummary
+      summary: Save a GPT conversation summary.
+      description: Future endpoint for saving structured GPT conversation summaries into Notion.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - title
+                - summary
+              properties:
+                title:
+                  type: string
+                summary:
+                  type: string
+                source:
+                  type: string
+                keyInsights:
+                  type: array
+                  items:
+                    type: string
+                relatedTasks:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        "202":
+          description: Accepted for processing.
+        "400":
+          description: Invalid request.
+
