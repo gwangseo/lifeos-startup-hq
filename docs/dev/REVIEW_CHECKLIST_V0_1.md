@@ -20,6 +20,9 @@ Task: `LIFEOS-CODEX-008`
 - [ ] 15:00 check-in remains low-friction and skippable.
 - [ ] 22:00 achievement log allows 0-10 entries and no shame.
 - [ ] Records do not claim unsupported saved-time metrics.
+- [ ] Manual fallback remains available when permission-based intervention is limited.
+- [ ] Permission Health is treated as a first-class product state.
+- [ ] Content, B2B, books, AI coaching, and community do not creep into MVP implementation unless explicitly assigned.
 
 ## Copy Review
 
@@ -35,6 +38,7 @@ Task: `LIFEOS-CODEX-008`
 - [ ] It avoids old, rigid, utilitarian dashboard aesthetics.
 - [ ] Korean text wraps on small screens.
 - [ ] Permission states are visible.
+- [ ] Permission Health has clear full, limited, reminder-only, manual, and unknown states where relevant.
 - [ ] Fallback states are designed.
 
 ## Technical Review

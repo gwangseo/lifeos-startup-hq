@@ -21,6 +21,10 @@ Keep UI direction modern, soft, rounded, airy, beautiful, and 2026-ready.
 
 Keep platform permission risks explicit. UI libraries do not solve app intervention permissions.
 
+Long-term expansion tracks such as content media, B2B, books, AI coaching, and community must not be implemented unless explicitly assigned.
+
+Manual fallback must remain available if permission-based app intervention is limited, unavailable, unreliable, or not approved.
+
 Before implementing, identify whether the assigned task is a planning document, future PoC task, or future production app task. Do not mix those boundaries.
 
 If assigned LIFEOS-CODEX-007, confirm it has been explicitly resumed by the user. If not, treat it as paused.
