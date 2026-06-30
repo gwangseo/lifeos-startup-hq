@@ -2,6 +2,8 @@
 
 LifeOS Startup HQ is a startup project focused on helping people build healthier relationships with technology, improve daily routines, and create meaningful personal operating systems.
 
+The current active product track is LifeOS mobile app MVP planning. The immediate work should stay focused on the mobile app MVP, platform feasibility, permission strategy, product scope, UX, UI, and implementation handoff documents.
+
 ## Core Themes
 
 - Digital detox and intentional technology use
@@ -11,6 +13,18 @@ LifeOS Startup HQ is a startup project focused on helping people build healthier
 - AI coaching and personal operating systems
 - Content media, books, apps, and community
 - B2B wellness and productivity services
+
+## Long-Term Expansion Tracks
+
+The following areas are long-term or deferred expansion tracks:
+
+- content media
+- B2B wellness and productivity services
+- books
+- AI coaching
+- community
+
+Do not implement these expansion tracks unless the user explicitly requests that work. They may be referenced as future context, but they should not expand the current mobile app MVP planning scope.
 
 ## System Architecture
 
@@ -41,3 +55,17 @@ Codex should use Notion-synced CSV data as source-of-truth context when availabl
 
 Secrets must never be hardcoded. Substantial work should happen on branches. Do not push directly to `main` unless explicitly approved.
 
+## Current App Planning State
+
+The LifeOS mobile app planning track is still pre-implementation.
+
+- `LifeOS` is a team/company placeholder.
+- `하루조각 / Daymark` are app name placeholders.
+- The brand name is not finalized.
+- React Native vs Flutter is not finalized.
+- Korean app-facing copy should use 존댓말.
+- The product direction is attention, time, and life-quality protection, not a generic blocker or habit tracker.
+- The UI direction should remain modern, soft, rounded, airy, beautiful, and 2026-ready.
+- iOS and Android app-intervention permission risks must remain explicit.
+
+`LIFEOS-CODEX-008` creates the AI Development Handoff Pack v0.1 before implementation. `LIFEOS-CODEX-007` is paused until this handoff pack is reviewed and the user explicitly resumes PoC work.
