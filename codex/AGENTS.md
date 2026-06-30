@@ -29,3 +29,27 @@ If a task is unclear, strategically ambiguous, or missing acceptance criteria, m
 - Keep changes scoped to the assigned task.
 - Summarize changed files and verification steps when done.
 
+## LifeOS App Planning Guardrails
+
+Before any future app implementation or PoC work, read:
+
+1. `MASTER_CONTEXT.md`
+2. Latest Notion-synced CSV files in `data/`
+3. `docs/dev/AI_DEVELOPMENT_HANDOFF_V0_1.md`
+4. `docs/dev/DEVELOPMENT_GUARDRAILS_V0_1.md`
+5. `docs/dev/IMPLEMENTATION_SEQUENCE_V0_1.md`
+
+For `LIFEOS-CODEX-008`, do not create app code, Android/iOS project skeletons, or production implementation files.
+
+`LIFEOS-CODEX-007` is paused unless the user explicitly resumes it.
+
+Preserve these app-planning constraints:
+
+- `LifeOS` is a team/company placeholder.
+- `하루조각 / Daymark` are app name placeholders.
+- Do not finalize the brand name.
+- Do not finalize React Native vs Flutter.
+- Keep Korean app-facing copy in 존댓말.
+- Preserve the direction: attention, time, and life-quality protection, not a generic blocker or habit tracker.
+- Keep UI modern, soft, rounded, airy, beautiful, and 2026-ready.
+- Keep platform permission risks explicit.

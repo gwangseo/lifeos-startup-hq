@@ -41,3 +41,17 @@ Codex should use Notion-synced CSV data as source-of-truth context when availabl
 
 Secrets must never be hardcoded. Substantial work should happen on branches. Do not push directly to `main` unless explicitly approved.
 
+## Current App Planning State
+
+The LifeOS mobile app planning track is still pre-implementation.
+
+- `LifeOS` is a team/company placeholder.
+- `하루조각 / Daymark` are app name placeholders.
+- The brand name is not finalized.
+- React Native vs Flutter is not finalized.
+- Korean app-facing copy should use 존댓말.
+- The product direction is attention, time, and life-quality protection, not a generic blocker or habit tracker.
+- The UI direction should remain modern, soft, rounded, airy, beautiful, and 2026-ready.
+- iOS and Android app-intervention permission risks must remain explicit.
+
+`LIFEOS-CODEX-008` creates the AI Development Handoff Pack v0.1 before implementation. `LIFEOS-CODEX-007` is paused until this handoff pack is reviewed and the user explicitly resumes PoC work.
