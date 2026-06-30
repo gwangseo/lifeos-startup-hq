@@ -32,13 +32,27 @@ The MVP should combine:
 | --- | --- | --- |
 | Onboarding | Gentle product promise, placeholder naming, copy rules | No hard brand lock-in |
 | Protected app setup | Select apps the user wants to pause before opening | Platform feasibility still unknown |
-| Permission education | Explain required permissions and fallback modes | Permission Health must be visible |
+| Permission education | Explain required permissions and fallback modes | Permission Health must be visible; fallback is part of P0 |
 | Pause/intervention experience | A short pause before opening selected distracting apps if technically feasible | Must not overpromise OS capability |
+| Manual protected-time logging | Let users manually record a pause or protected moment when direct intervention is unavailable | P0 fallback path |
 | Home | Today state, next gentle action, permission health | Avoid dense dashboard feel |
 | 15:00 check-in | 1-5 low-friction attention/life-quality score | Skippable |
 | 22:00 achievement log | 0-10 small wins or protected moments | Skippable, non-shaming |
 | Records | Saved pauses, check-ins, small wins | Avoid unsupported minute claims |
 | Settings | Protected apps, permissions, reminders, language-ready settings | Support fallback modes |
+
+## P0 Fallback Modes
+
+Fallback modes are part of P0 when platform intervention is limited, unavailable, unreliable, or not yet approved by store review.
+
+P0 fallback must include:
+
+- reminder-only mode
+- manual protected-time logging
+- manual pause or protected-moment records
+- Permission Health status that explains why full intervention is limited
+
+These fallback modes should preserve the same product thesis: protecting attention, time, and life quality without pretending the app can always intervene before another app opens.
 
 ## P1 Candidates
 
@@ -46,7 +60,6 @@ The MVP should combine:
 - Lightweight progress artifact or garden-like reward system
 - Expanded intervention copy rotation
 - Notification tuning
-- Manual protected-time logging
 - Basic localization review for Korean and English
 
 ## Deferred

@@ -31,6 +31,10 @@ UI must remain modern, soft, rounded, airy, beautiful, and 2026-ready.
 
 Platform permission risks around iOS and Android intervention must stay visible in code comments, docs, and review notes where relevant.
 
+Long-term expansion tracks such as content media, B2B, books, AI coaching, and community must not be implemented unless explicitly assigned.
+
+Manual fallback must remain available if permission-based app intervention is limited, unavailable, unreliable, or not approved.
+
 Clearly identify whether you are working on:
 - planning documentation
 - future throwaway PoC
